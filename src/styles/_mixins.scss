@@ -1,0 +1,10 @@
+@mixin subheading-1 {
+  font-family: var(--font-bellefair);
+  text-transform: uppercase;
+}
+
+@mixin subheading-2 {
+  font-family: var(--font-bellefair);
+  letter-spacing: 2.35;
+  text-transform: uppercase;
+}
