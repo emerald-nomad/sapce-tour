@@ -1,12 +1,23 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <h1>Space</h1>
+      <picture>
+        <source
+          srcSet="images/home/background-home-mobile.jpg"
+          media="(max-width: 375px)"
+        />
+        <source
+          srcSet="images/home/background-home-tablet.jpg"
+          media="(max-width: 768px)"
+        />
+        <img
+          src="images/home/background-home-desktop.jpg"
+          alt="Earth & Space Background Image"
+        />
+      </picture>
     </div>
   );
 };
